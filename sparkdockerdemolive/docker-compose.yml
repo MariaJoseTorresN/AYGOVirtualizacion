@@ -11,9 +11,9 @@ services:
             - "8087:6000"
     db:
         image: mongo:3.6.1
-        container_name: db
+        container_name: dbnewname
         volumes:
-            - mongodb:/data/db
+            - mongodb:/data/dbnewname
             - mongodb_config:/data/configdb
         ports:
             - 27017:27017
